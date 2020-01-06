@@ -1,0 +1,603 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 175%;
+}
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*---     code for web design     ---*/
+
+/*navbar design*/
+.navbar {
+    background-color: #242729;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-size: 20px;
+    color: white;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: white;
+        background-color: #3B4045
+    }
+
+.dropdown-menu, .dropdown-menu-item {
+    background-color: #242729;
+    color: white !important;
+}
+
+    .dropdown-menu-item:hover {
+        background-color: #3B4045 !important;
+    }
+
+/*First half of FasTest*/
+.fas {
+    color: #9FA6AD;
+    font-family: Audiowide, cursive
+}
+
+.test {
+    color: #2F96E8;
+    font-family: Audiowide, cursive
+}
+
+.jumbotron {
+    background-color: #242729;
+    color: white;
+}
+
+/*Button design*/
+/*input[type="button"], input[type="submit"] {
+    border-radius: 3px;
+    background-color: #2378C8;
+    color: white;
+}
+
+    input[type="button"]:hover, input[type="submit"]:hover {
+        background-color: #a3bbff;
+        color: white;
+        border-top-color: #333333;
+        border-left-color: #333333;
+    }*/
+
+
+/*Background colors for design*/
+.white {
+    background-color: white;
+}
+
+.gray {
+    background-color: #6E6768;
+}
+
+.blue {
+    background-color: #242729;
+}
+
+
+/*table design*/
+table {
+    /*border-color: #6E6768;*/
+    border-style: none;
+
+}
+
+th {
+    background-color: #23629F;
+    color: white;
+    min-width: 130px;
+    border-color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+td {
+    padding: 10px 0px;
+}
+
+th a {
+    color: white;
+}
+
+    th a:hover {
+        color: #6E6768;
+    }
+
+table th:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+table th:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.gradesPageOverallGrade {
+    font-size:125%;
+    
+}
+
+
+/*---     end code for web design     ---*/
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.homeJumbotrons:hover {
+    background-color: #4b5756;
+}
+
+.homeJumbotronText {
+    text-align: center;
+}
+
+.ClassMainPageGridview {
+    padding: 10px;
+    background-color: #e2e2e2;
+}
+
+H1 {
+    padding: 15px;
+}
+
+.csNewUser {
+    background-color: #ededed;
+    border: 3px solid #2f96e8;
+    padding-bottom: 5px;
+    width: inherit;
+}
+
+
+
+.smallButtonClass {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 1px 2px 1px 2px;
+    border: solid #2378c8 3px;
+    text-decoration: none;
+}
+
+    .smallButtonClass:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+    }
+.fixedHeader {
+    position: absolute;
+    width: 130px;
+    margin-top: -31px;
+    top: expression(Sys.UI.DomElement.getBounds(document.getElementById("panelContainer")).y-25);
+    color: white;
+}
+.fixedHeaderTest {
+    position: absolute;
+    width: 700px;
+    margin-top: -31px;
+    top: expression(Sys.UI.DomElement.getBounds(document.getElementById("panelContainer")).y-25);
+    color: white;
+}
+.Grid-Scroll-Row {
+    position: static;
+}
+.Grid {
+    background-color: #fff;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    font-family: Calibri;
+    color: #474747;
+    overflow: auto;
+}
+
+    .Grid td {
+        padding: 5px;
+        border: solid 1px #c1c1c1;
+        text-align: center;
+        width: 130px;
+    }
+
+    .Grid th {
+        padding: 5px;
+        color: #fff;
+        background: #2378c8 url(Images/grid-header.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+        width: 130px;
+    }
+
+    .Grid .alt {
+        background: #fcfcfc url(Images/grid-alt.png) repeat-x top;
+    }
+
+    .Grid .pgr {
+        background: #2378c8 url(Images/grid-pgr.png) repeat-x top;
+    }
+
+        .Grid .pgr table {
+            margin: 3px 0;
+        }
+
+        .Grid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .Grid .pgr a {
+            color: black;
+            text-decoration: none;
+        }
+
+            .Grid .pgr a:hover {
+                color: #000;
+                text-decoration: underline;
+            }
+
+
+    .Grid input[type="button"]:enabled,  input[type="image"], .EditButtons {
+        -moz-border-radius: 28px;
+        -webkit-border-radius: 28px;
+        border-radius: 28px;
+        border: 1px solid #1b36bd;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-size: 12px;
+        padding: 6px 12px;
+        background: inherit;
+        border: 2px solid #2f96e8;
+        color: #2f96e8;
+        font-family: "Montserrat" sans-serif;
+        transition: all 0.5s linear;
+    }
+
+
+    .Grid input[type="button"]:hover{
+        color: white;
+        background: #2f96e8;
+    }
+
+
+.Grid a:hover {
+    color: white;
+}
+
+    .Grid input:active {
+        position: relative;
+        top: 1px;
+    }
+
+.gridSelect:enabled {
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    border: 1px solid #1b36bd;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 3px 6px;
+    background: inherit;
+    border: 2px solid #2f96e8;
+    color: #2f96e8;
+    font-family: "Montserrat" sans-serif;
+    transition: all 0.5s linear;
+    text-align: center;
+}
+.gridSelect:disabled {
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    cursor: pointer;
+    color: #80808d;
+    font-size: 18px;
+    padding: 3px 6px;
+    background: #f2f2f2;
+    border: 2px solid #a5a5a5;
+    font-family: "Montserrat" sans-serif;
+    transition: all 0.5s linear;
+    text-align: center;
+}
+
+    .gridSelect:hover:enabled {
+        color: white;
+        background: #2f96e8;
+    }
+
+    .gridSelectCell{
+        padding: 10px 10px 10px 10px;
+    }
+
+
+/*.textBoxes {
+    border: #ebebeb;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: auto;
+    max-width: inherit;
+}*/
+
+    .textBoxes:focus {
+        background-color: #ebebeb;
+        border-bottom: 3px solid #2378c8;
+    }
+
+.LogintextBoxes {
+    border: #ebebeb;
+    height:30px;
+    border-bottom: 3px solid #2378c8;
+    width: auto;
+    background-color: #ebebeb;
+}
+
+.dropDownList {
+    border: #2378c8;
+    width: auto;
+    background-color: white;
+    border-color:black;
+    border-width:1px;
+}
+
+.loginbox {
+    width:100%;
+}
+.loginbox table {
+    width:100%;
+}
+
+
+/* buttonClass, dropDownList, textBoxes, Grid*/
+.LoginbuttonClass {
+    text-align: center;
+    width: 100%;
+    padding: 5px 15px;
+    background: inherit;
+    border: 2px solid #2f96e8;
+    color: #2f96e8;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Montserrat" sans-serif;
+    transition: all 0.5s linear;
+}
+    .LoginbuttonClass:hover {
+        color: white;
+        background: #2f96e8;
+    }
+
+.buttonClass {
+
+    padding: 5px 15px;
+    background: inherit;
+    border: 2px solid #2f96e8;
+    color: #2f96e8;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Montserrat" sans-serif;
+    transition: all 0.5s linear;
+}
+
+    .buttonClass:hover {
+        color: white;
+        background: #2f96e8;
+    }
+
+
+
+.fa {
+    margin-right: 20px;
+    -webkit-animation: spinning ease-in-out;
+}
+
+.testQuestion {
+    font-size:150%;
+}
+
+.wrapper {
+    text-align:center;
+    width:100%
+}
+
+.TestButtonClass {
+    padding: 5px 15px;
+    background: inherit;
+    border: 2px solid #2f96e8;
+    color: #2f96e8;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Montserrat" sans-serif;
+    transition: all 0.5s linear;
+}
+    .TestButtonClass:hover {
+        color: white;
+        background: #2f96e8;
+    }
+
+
+.testCreation,
+.testCreation:hover,
+.testCreation:focus,
+.testCreation:active {
+    border-color: transparent;
+    background-color: transparent;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.testCreation:hover,
+.testCreation:focus {
+    color: #2a6496;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.TestTextBoxes {
+    margin:10px;
+    margin-left:0px;
+}
+/*Modal Popup CSS*/
+.modalBackground {
+    background-color: Black;
+    filter: alpha(opacity=90);
+    opacity: 0.8;
+}
+
+.modalPopup {
+    background-color: #FFFFFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 500px;
+    height: 140px;
+}
+
+@-webkit-keyframes spinning {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+.specialGrid td {
+    padding: 5px;
+    border: solid 1px #c1c1c1;
+    text-align: center;
+    width: auto;
+    min-width: 121px;
+}
+
+.specialGrid th {
+    padding: 5px;
+    color: #fff;
+    background: #2378c8 url(Images/grid-header.png) repeat-x top;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+    width: auto;
+    min-width: 120px;
+}
+
+.specialGrid .alt {
+    background: #fcfcfc url(Images/grid-alt.png) repeat-x top;
+}
+
+.specialGrid .pgr {
+    background: #2378c8 url(Images/grid-pgr.png) repeat-x top;
+}
+
+    .specialGrid .pgr table {
+        margin: 3px 0;
+    }
+
+    .specialGrid .pgr td {
+        border-width: 0;
+        padding: 0 6px;
+        border-left: solid 1px #666;
+        font-weight: bold;
+        color: #fff;
+        line-height: 12px;
+    }
+
+    .specialGrid .pgr a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .specialGrid .pgr a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+.questionGrid {
+    padding: 5px;
+    border: solid 1px #c1c1c1;
+    text-align: center;
+    width: 475px!important;
+    min-width: 448px !important;
+}
+
+.questionGridHeader {
+    padding: 5px;
+    color: #fff;
+    background: #2378c8 url(Images/grid-header.png) repeat-x top;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+    width: auto;
+    min-width: 450px !important;
+}
+
+.questionTypeGrid {
+    padding: 5px;
+    border: solid 1px #c1c1c1;
+    text-align: center;
+    width: 475px !important;
+    min-width: 150px !important;
+}
+
+.questionTypeGridHeader {
+    padding: 5px;
+    color: #fff;
+    background: #2378c8 url(Images/grid-header.png) repeat-x top;
+    border-left: solid 1px #525252;
+    font-size: 0.9em;
+    width: auto;
+    min-width: 178px !important;
+}
+
+
+.Logo {
+    image-rendering: -webkit-optimize-contrast, optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
